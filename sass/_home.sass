@@ -775,3 +775,443 @@
                 color: #3C57FF
         .frame__wrap
             padding: 0 75px
+@media(max-width: 1099px)
+    .home
+        &-features
+            &__all
+                width: calc(100% - 30px)
+            &__block
+                padding: 24px
+                width: 340px
+                &:nth-child(1), &:nth-child(4)
+                    width: 570px
+        &-photo
+            &__all
+                width: calc(100% - 30px)
+        &-price
+            &__img
+                width: 140px
+            &__btn
+                width: 140px
+            &__price
+                font-size: 16px
+            &__name
+                font-size: 14px
+            &__big
+                .home-price__img
+                    width: 100%
+@media(max-width: 991px)
+    .home
+        &-steps
+            &__block
+                max-width: 150px
+            &__call
+                margin-left: 0
+            &__small
+                margin-left: 0
+                text-align: left
+        &-serv
+            &__block span
+                font-size: 18px
+        &-features
+            &__block
+                padding: 24px
+                width: 100%
+                height: auto
+                &:nth-child(1), &:nth-child(4)
+                    width: 100%
+                &:nth-child(3)
+                    order: 5
+        &-photo
+            &__cont
+                grid-column: 1/3
+            &__img
+                &:nth-child(3)
+                    grid-column: auto
+                    grid-row: auto
+        &-price
+            &__products
+                overflow-x: scroll
+            &__big
+                .home-price__img
+                    width: 140px
+                    display: flex
+                    justify-content: center
+                    margin: 0 auto
+                    img
+                        max-width: 100%
+        &-see
+            &__wrap
+                display: block
+            &__cont
+                margin-bottom: 40px
+        &-qa
+            &__wrap
+                display: block
+            &__title
+                margin-bottom: 40px
+            &__main
+                width: 100%
+@media(max-width: 767px)
+    .home
+        &-steps
+            &__wrap
+                display: block
+                &::after
+                    display: none
+                &::before
+                    width: 23px
+                    height: 593px
+                    background: url('../img/home/serv-mob.svg') bottom center no-repeat
+                    left: 13px
+                    top: 26px
+            &__num
+                width: 48px
+                height: 48px
+                margin-right: 16px
+            &__block
+                max-width: 275px
+                margin-bottom: 26px
+                display: flex
+                align-items: flex-start
+                &:nth-child(1)
+                    margin-bottom: 48px
+                &:nth-child(2)
+                    margin-bottom: 56px
+                &:nth-child(5)
+                    margin-bottom: 100px
+            &__cont
+                width: calc(100% - 64px)
+            &__name
+                font-weight: 600
+                font-size: 16px
+                line-height: 22px
+                margin-bottom: 8px
+        &-serv
+            &__wrap
+                flex-direction: column
+                grid-gap: 16px
+            &__block
+                width: 350px
+                max-width: 100%
+                span
+                    font-size: 18px
+                    line-height: 22px
+                    padding-left: 20px
+                    padding-right: 20px
+        &-features
+            &__block
+                &:nth-child(1), &:nth-child(4)
+                    padding-bottom: 100px
+        &-markets
+            &__wrap
+                width: 100%
+            &__block
+                font-size: 16px
+                padding: 16px
+                border-radius: 16px
+                br
+                    display: none
+                span
+                    font-size: 28px
+        &-quote
+            &__title
+                width: 100%
+            &__text
+                width: 100%
+        &-price
+            &__tabs
+                flex-wrap: wrap
+                justify-content: flex-start
+        &-reviews
+            &__title
+                padding: 0 16px
+        &-contacts
+            &__wrap
+                flex-direction: column-reverse
+                align-items: flex-start
+            &__map
+                width: 100%
+                margin-bottom: 40px
+            &__cont
+                max-width: 100%
+@media(max-width: 575px)
+    .home
+        &-steps
+            padding: 32px 0
+            &__call
+                width: 201px
+                height: 40px
+                border-radius: 8px
+                margin-bottom: 24px
+                font-size: 14px
+                line-height: 24px
+            &__small
+                font-size: 16px
+                line-height: 24px
+        &-serv
+            padding-top: 32px
+            padding-bottom: 36px
+            &__block
+                height: 230px
+            &__title
+                margin-bottom: 32px
+                font-size: 28px
+                line-height: 32px
+        &-features
+            padding: 32px 0
+            padding-top: 36px
+            &__block
+                &:nth-child(1), &:nth-child(4)
+                    padding-bottom: 165px
+                    img
+                        max-height: 160px
+            &__all
+                width: 100%
+                border-radius: 0
+                padding: 64px 0
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 32px
+            &__name
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 16px
+            &__icon
+                margin-bottom: 24px
+            &__descr
+                font-size: 14px
+                line-height: 20px
+        &-markets
+            padding: 32px 0
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 16px
+                text-align: left
+                span
+                    padding-left: 5px
+                    padding-right: 5px
+                    margin-left: -5px
+                    font-size: 28px
+                    line-height: 28px
+            &__descr
+                text-align: left
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 32px
+            &__wrap
+                display: flex
+                flex-wrap: wrap
+                grid-gap: 16px
+            &__block
+                width: 100%
+                max-width: 100%
+                height: auto
+                padding: 26px 16px
+                font-size: 14px
+                line-height: 20px
+                br
+                    display: block
+                span
+                    font-size: 40px
+                    line-height: 48px
+                    margin-bottom: 8px
+        &-photo
+            padding: 32px 0
+            &__all
+                border-radius: 0
+                width: 100%
+                padding: 64px 0
+            &__wrap
+                grid-template-rows: auto
+                grid-gap: 16px
+            &__cont
+                padding: 24px
+            &__name
+                margin-bottom: 16px
+                font-size: 24px
+                line-height: 28px
+                max-width: 218px
+            &__descr
+                margin: 0
+                font-size: 14px
+                line-height: 20px
+            &__img
+                height: 145px
+        &-quote
+            padding: 32px 0
+            &__title
+                font-size: 18px
+                line-height: 22px
+                margin-bottom: 16px
+            &__text
+                font-size: 14px
+                line-height: 20px
+        &-price
+            padding-bottom: 26px
+            padding-top: 32px
+            &__title
+                text-align: left
+                margin-bottom: 16px
+                font-size: 28px
+                line-height: 32px
+            &__tabs
+                grid-gap: 8px
+                margin-bottom: 32px
+                a
+                    padding: 8px 14px
+                    font-size: 14px
+                    line-height: 20px
+            &__big
+                overflow-x: scroll
+                .home-price__name
+                    height: 40px
+            &__name
+                font-size: 14px
+                line-height: 20px
+                height: 60px
+                margin-bottom: 16px
+            &__table
+                border-radius: 16px
+            &__line
+                display: block
+                span
+                    width: 100%
+                    display: block
+                    padding: 16px
+                    &:last-child
+                        padding-top: 0px
+                        border: 0
+        &-see
+            padding-top: 26px
+            padding-bottom: 32px
+            &__wrap
+                padding: 48px 24px
+                border-radius: 16px
+            &__cont
+                width: 100%
+                margin-bottom: 0
+            &__form
+                width: 100%
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 16px
+                span
+                    display: inline-block
+                    margin-top: 4px
+                    line-height: 28px
+                    margin-left: -5px
+                    padding-left: 5px
+                    padding-right: 5px
+            &__subtitle
+                font-size: 18px
+                line-height: 22px
+                margin-bottom: 8px
+            &__text
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 16px
+            &__form
+                padding-top: 16px
+                input:not(input[type="checkbox"])
+                    height: 40px
+                    margin-bottom: 8px
+                    padding: 0 16px
+                    border-radius: 8px
+                    font-size: 14px
+                    line-height: 20px
+                    padding-bottom: 2px
+                button
+                    height: 40px
+                    font-size: 14px
+                    line-height: 24px
+                    border-radius: 8px
+                .check
+                    padding-top: 8px
+                    align-items: flex-start
+                    span
+                        min-width: 15px
+                    input:checked + span
+                        &::after
+                            left: 2px
+        &-reviews
+            padding: 32px 0
+            &__title
+                text-align: left
+                margin-bottom: 16px
+                font-size: 28px
+                line-height: 32px
+                span
+                    &::after
+                        display: none
+            &__tabs
+                flex-wrap: wrap
+                justify-content: flex-start
+                padding: 0 16px
+                margin-bottom: 32px
+                grid-gap: 8px
+                a
+                    padding: 8px 14px
+                    font-size: 14px
+                    line-height: 20px
+            .frame__wrap
+                padding: 0 16px
+            &__block
+                width: 241px
+                margin-right: 16px
+                padding: 22px
+            &__subtitle
+                font-size: 16px
+                line-height: 22px
+                margin-bottom: 12px
+            &__text
+                font-size: 14px
+                line-height: 20px
+            &__bottom
+                flex-wrap: wrap
+        &-qa
+            padding-bottom: 24px
+            padding-top: 32px
+            &__title
+                margin-bottom: 16px
+                font-size: 28px
+                line-height: 32px
+            &__name
+                font-size: 16px
+                line-height: 22px
+                padding: 16px 0
+                padding-right: 20px
+            &__cont
+                font-size: 14px
+                line-height: 20px
+                padding-bottom: 12px
+            &__block
+                &::after
+                    right: 0
+                    top: 12px
+        &-contacts
+            padding-top: 24px
+            padding-bottom: 64px
+            &__map
+                width: 100%
+                height: 204px
+                margin-bottom: 32px
+                border-radius: 16px
+            &__cont
+                max-width: 100%
+                width: 230px
+            &__title
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 32px
+            &__link
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 8px
+            &__time
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 32px

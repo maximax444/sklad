@@ -1,9 +1,9 @@
 .container
     width: 1024px
     margin: auto
-@media (max-width: 1049px)
+@media (max-width: 1099px)
     .container
-        width: 980px
+        width: 940px
         margin: auto
 @media (max-width: 991px)
     .container
@@ -262,3 +262,167 @@
         display: flex
         justify-content: center
         align-items: center
+.mob-menu
+    display: none
+.breadcrumbs
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding-top: 36px
+    grid-gap: 36px
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    color: #0B0B0B
+    span
+        text-decoration: none
+        font-size: 16px
+        line-height: 24px
+        color: #0B0B0B
+    a
+        position: relative
+        color: #536BFF
+        text-decoration: none
+        font-size: 16px
+        line-height: 24px
+        &::after
+            width: 20px
+            height: 20px
+            display: block
+            content: ""
+            position: absolute
+            left: calc(100% + 8px)
+            top: 1px
+            background: url('../img/pages/bread.svg') center no-repeat
+            background-size: contain
+        &:hover
+            opacity: 0.8
+@media(max-width: 1099px)
+    .footer__all
+        width: calc(100% - 30px)
+    .footer__menu ul
+        max-width: 140px
+    .main
+        &__wrap
+            padding-left: 0
+            padding-right: 0
+        &__title
+            font-size: 56px
+    .header
+        &--home
+            .header__wrap
+                padding-left: 0
+                padding-right: 0
+        &__menu>li>ul
+            width: 740px
+            &::before
+                left: 50px
+@media(max-width: 991px)
+    .footer
+        padding-bottom: 0
+        &__all
+            width: 100%
+            border-radius: 0
+    .main
+        &__wrap
+            display: block
+        &__video
+            display: block
+            width: 100%
+            height: 400px
+        &__cont
+            padding-bottom: 60px
+    .header
+        &__menu
+            grid-gap: 8px
+            &>li>a
+                font-size: 14px
+@media(max-width: 767px)
+    .footer
+        &__wrap
+            flex-wrap: wrap
+            grid-gap: 40px 0
+            padding-bottom: 140px
+            position: relative
+        &__info
+            position: absolute
+            bottom: 0
+            left: 0
+        &__logo
+            width: 100%
+    .header
+        padding: 16px 0
+        position: relative
+        &__right, &__menu
+            display: none
+        &__wrap
+            justify-content: center
+    .mob-menu
+        display: flex
+        position: absolute
+        top: 24px
+        left: 19px
+        text-decoration: none
+@media(max-width: 575px)
+    .main
+        padding-top: 16px
+        padding-bottom: 35px
+        &__title
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 24px
+            span
+                line-height: 28px
+                padding-bottom: 10px
+                padding-left: 5px
+                padding-right: 5px
+                margin-left: -5px
+        &__cont
+            padding-bottom: 32px
+        &__descr
+            font-size: 16px
+            line-height: 24px
+        &__video
+            height: 156px
+            border-radius: 16px
+    .header
+        &__logo
+            width: 64px
+            img
+                max-width: 100%
+    .footer
+        padding-top: 0
+        &__all
+            padding-top: 32px
+            padding-bottom: 17px
+        &__wrap
+            padding-bottom: 103px
+            grid-gap: 0
+        &__logo
+            margin-bottom: 58px
+        &__subtitle
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 8px
+        &__menu
+            display: block
+            width: 100%
+            &>li
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                margin-bottom: 24px
+                &>a
+                    width: 50%
+                    font-size: 16px
+                    line-height: 22px
+                &>ul
+                    width: 50%
+                    max-width: 50%
+                    &>li>a
+                        margin-bottom: 8px
+    .breadcrumbs
+        padding-top: 16px
