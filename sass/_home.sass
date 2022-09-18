@@ -124,3 +124,318 @@
             color: #000000
             width: 628px
             margin: 0 auto
+    &-contacts
+        padding-bottom: 64px
+        padding-top: 52px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__map
+            width: 669px
+            height: 500px
+            background: #F0F0F0
+            border-radius: 64px
+            overflow: hidden
+        &__cont
+            max-width: 327px
+        &__title
+            margin: 0
+            margin-bottom: 24px
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            color: #000000
+        &__link
+            font-size: 28px
+            line-height: 40px
+            color: #000000
+            margin-bottom: 24px
+            text-decoration: none
+            display: block
+            &:hover
+                color: #3C57FF
+        &__time
+            font-size: 28px
+            line-height: 40px
+            color: #000000
+            margin-bottom: 24px
+        &__soc
+            display: flex
+            align-items: center
+            grid-gap: 16px
+            a
+                text-decoration: none
+                &:hover
+                    opacity: 0.8
+    &-qa
+        padding-bottom: 52px
+        padding-top: 62px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+        &__title
+            margin: 0
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            color: #000000
+        &__main
+            width: 669px
+        &__block
+            border-bottom: 1px solid #DADADA
+            padding-bottom: 5px
+            position: relative
+            &::after
+                content: "+"
+                width: 10px
+                font-weight: 700
+                font-size: 20px
+                line-height: 26px
+                text-align: center
+                color: #000000
+                position: absolute
+                right: 16px
+                top: 24px
+            &.active::after
+                content: "–"
+            &:last-child
+                border-bottom: 0
+        &__name
+            padding: 24px 0
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            color: #000000
+            cursor: pointer
+        &__cont
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            display: none
+            padding-bottom: 22px
+    &-price
+        padding-top: 52px
+        padding-bottom: 54px
+        &__title
+            margin: 0
+            margin-bottom: 48px
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+        &__tabs
+            display: flex
+            align-items: center
+            justify-content: center
+            grid-gap: 16px
+            margin-bottom: 52px
+            a
+                padding: 12px 20px
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08)
+                border-radius: 12px
+                font-size: 16px
+                line-height: 24px
+                text-align: center
+                color: #000000
+                text-decoration: none
+                &.active, &:hover
+                    background: #3C57FF
+                    color: #FFFFFF
+        &__cont
+            &-block
+                display: none
+                &.active
+                    display: block
+        &__products
+            display: grid
+            grid-template-columns: repeat(5,1fr)
+            grid-gap: 16px
+        &__card
+            padding: 16px
+            border: 1px solid #DADADA
+            border-radius: 24px
+        &__img
+            height: 116px
+            display: flex
+            justify-content: center
+            align-items: center
+            max-width: 120%
+            max-height: 120%
+            margin-bottom: 16px
+        &__price
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            margin-bottom: 8px
+            color: #000000
+        &__name
+            margin: 0
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            height: 72px
+            overflow: hidden
+            margin-bottom: 24px
+        &__btn
+            background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+            border-radius: 8px
+            width: 160px
+            height: 50px
+            display: flex
+            justify-content: center
+            border: 1px solid #3C57FF
+            align-items: center
+            max-width: 100%
+            font-weight: 700
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+            color: #FFFFFF
+            text-decoration: none
+            &:hover
+                opacity: 0.8
+    &-features
+        padding-top: 52px
+        padding-bottom: 72px
+        &__all
+            width: calc(100% - 50px)
+            margin: 0 auto
+            padding-top: 56px
+            padding-bottom: 92px
+            background: linear-gradient(148.7deg, #9368FE -46.54%, #4F5BFD 95.09%)
+            border-radius: 64px
+        &__title
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #FFFFFF
+            margin: 0
+            margin-bottom: 70px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            grid-gap: 32px 0
+        &__block
+            width: 360px
+            height: 360px
+            background: rgba(255, 255, 255, 0.12)
+            border-radius: 32px
+            position: relative
+            padding: 40px
+            &:nth-child(1), &:nth-child(4)
+                width: 632px
+            &:nth-child(1)
+                .home-features__descr
+                    max-width: 300px
+                .home-features__img
+                    bottom: 15px
+            &:nth-child(4)
+                .home-features__name
+                    margin-bottom: 24px
+        &__name
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            color: #FFFFFF
+            margin-bottom: 16px
+            max-width: 349px
+            span
+                position: relative
+                &::after
+                    content: ""
+                    display: block
+                    height: 3px
+                    width: 100%
+                    background: #FFFFFF
+                    opacity: 0.8
+                    border-radius: 50%
+                    transform: rotate(-1deg)
+                    position: absolute
+                    bottom: -4px
+                    left: 0
+            b
+                position: relative
+                &::after
+                    content: ""
+                    display: block
+                    height: 30px
+                    width: 30px
+                    background: url('../img/home/feat-name.svg') center no-repeat
+                    position: absolute
+                    top: -10px
+                    right: -25px
+        &__descr
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: #FFFFFF
+            max-width: 325px
+        &__img
+            position: absolute
+            bottom: 0
+            right: 0
+        &__icon
+            margin-bottom: 35px
+    &-photo
+        padding-top: 47px
+        padding-bottom: 64px
+        &__all
+            background: linear-gradient(148.7deg, #9368FE -46.54%, #4F5BFD 95.09%)
+            border-radius: 64px
+            padding-top: 111px
+            padding-bottom: 99px
+            width: calc(100% - 50px)
+            margin: 0 auto
+        &__wrap
+            display: grid
+            grid-template-rows: repeat(2, 310px)
+            grid-template-columns: repeat(2, 1fr)
+            grid-auto-flow: column
+            grid-gap: 29px
+        &__img
+            filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.06))
+            border-radius: 32px
+            overflow: hidden
+            &:nth-child(3)
+                grid-row: 1/3
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__cont
+            background: rgba(255, 255, 255, 0.12)
+            border-radius: 32px
+            padding: 32px 40px
+        &__name
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            color: #FFFFFF
+            margin-bottom: 16px
+            max-width: 349px
+            span
+                position: relative
+                &::after
+                    content: ""
+                    display: block
+                    height: 3px
+                    width: 100%
+                    background: #FFFFFF
+                    opacity: 0.8
+                    border-radius: 50%
+                    transform: rotate(-1deg)
+                    position: absolute
+                    bottom: -4px
+                    left: 0
+        &__descr
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: #FFFFFF
