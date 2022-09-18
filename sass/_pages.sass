@@ -142,6 +142,78 @@
                 color: #3C57FF
     &__boss
         padding-top: 32px
+.about
+    padding-top: 24px
+    padding-bottom: 76px
+    &-see
+        &__wrap
+            align-items: center
+        &__title
+            span
+                margin-left: -10px
+                margin-top: 4px
+    &__title
+        font-weight: 700
+        font-size: 60px
+        line-height: 68px
+        color: #0B0B0B
+        margin-top: 0
+        margin-bottom: 48px
+    &__article
+        width: 669px
+        max-width: 100%
+        img
+            width: 100%
+            height: 268px
+            border-radius: 24px
+            margin-bottom: 48px
+            object-fit: cover
+            & + h2
+                margin-top: 0
+        p
+            font-weight: 400
+            font-size: 20px
+            line-height: 28px
+            color: #0B0B0B
+            margin-bottom: 6px
+            margin-top: 0
+            & + img
+                margin-top: 48px
+        h2
+            margin-top: 48px
+            margin-bottom: 32px
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            color: #0B0B0B
+    &__wrap
+        width: 669px
+        max-width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        grid-gap: 32px 0
+        padding-top: 60px
+    &__img
+        height: 200px
+        width: 100%
+        margin-bottom: 16px
+        border-radius: 24px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__block
+        width: 200px
+        max-width: 31%
+    &__name
+        font-size: 16px
+        line-height: 24px
+        color: #0B0B0B
+        span
+            display: block
+            font-weight: 700
 @media(max-width: 991px)
     .thx
         &__block
@@ -216,3 +288,34 @@
             font-size: 14px
             line-height: 20px
             margin-bottom: 16px
+    .about
+        padding-bottom: 32px
+        padding-top: 32px
+        &-see
+            &__title
+                font-size: 27px
+                span
+                    margin-left: -5px
+        &__title
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 32px
+        &__article
+            img
+                height: 156px
+                border-radius: 16px
+                margin-bottom: 32px
+            p
+                font-size: 14px
+                line-height: 20px
+            h2
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                color: #0B0B0B
+                margin-bottom: 16px
+        &__block
+            max-width: 48%
+            width: 128px
+        &__img
+            height: 128px
