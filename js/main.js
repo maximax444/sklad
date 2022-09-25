@@ -33,6 +33,20 @@ $('.home-qa__name').on('click', function () {
 
     });
 })(jQuery);
+(function ($) {
+    $(function () {
+
+        $('.reviews__tabs').on('click', 'a:not(.active)', function (e) {
+            e.preventDefault();
+
+            $(this).closest('.reviews').find('.reviews__cont-block').removeClass('active').eq($(this).index()).find('.frame__wrap').sly('init');
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.reviews').find('.reviews__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);
 var $frame = $('.frame__wrap');
 var $slidee = $('.frame');
 var $wrap = $frame.parent();

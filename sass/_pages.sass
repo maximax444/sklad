@@ -214,12 +214,64 @@
         span
             display: block
             font-weight: 700
+.reviews
+    padding-bottom: 52px
+    .home-reviews__block
+        float: none
+        display: block
+        page-break-inside: avoid
+        break-inside: avoid
+        margin-bottom: 32px
+        margin-right: 0
+    &__bread
+        .breadcrumbs
+            justify-content: center
+            padding-top: 48px
+            padding-bottom: 24px
+    &__cont
+        &-block
+            width: 848px
+            margin: 0 auto
+            max-width: 100%
+            columns: 2
+            display: none
+            &.active
+                display: block
+    &__title
+        margin-top: 0
+        margin-bottom: 64px
+        font-weight: 700
+        font-size: 60px
+        line-height: 68px
+        text-align: center
+        color: #000000
+    &__tabs
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 59px
+        grid-gap: 16px
+        a
+            padding: 12px 20px
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08)
+            border-radius: 12px
+            font-size: 16px
+            line-height: 24px
+            text-align: center
+            color: #000000
+            text-decoration: none
+            &.active, &:hover
+                background: #3C57FF
+                color: #FFFFFF
 @media(max-width: 991px)
     .thx
         &__block
             max-width: 48%
             &:last-child
                 display: none
+    .reviews
+        .home-reviews__block
+            width: auto
 @media(max-width: 767px)
     .contacts
         &__wrap
@@ -231,7 +283,34 @@
             width: 100%
         &__boss
             padding-top: 0
+    .reviews
+        &__cont
+            &-block
+                columns: 1
+        &__tabs
+            flex-wrap: wrap
+            justify-content: flex-start
 @media(max-width: 575px)
+    .reviews
+        padding-top: 32px
+        padding-bottom: 20px
+        &__tabs
+            grid-gap: 8px
+            margin-bottom: 32px
+            a
+                padding: 8px 14px
+        .home-reviews__block
+            margin-bottom: 24px
+        &__bread
+            .breadcrumbs
+                justify-content: flex-start
+                padding-top: 16px
+                padding-bottom: 0
+        &__title
+            text-align: left
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 24px
     .contacts
         padding: 32px 0
         padding-bottom: 16px
