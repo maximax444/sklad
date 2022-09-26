@@ -1,0 +1,364 @@
+.price
+    &-top
+        padding-top: 24px
+        &__title
+            font-weight: 700
+            font-size: 60px
+            line-height: 68px
+            text-align: center
+            color: #000000
+            margin-bottom: 36px
+            margin-top: 0
+        &__tabs
+            margin-bottom: 84px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            grid-gap: 16px
+            a
+                padding: 12px 20px
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: #000000
+                border-radius: 12px
+                text-decoration: none
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08)
+                &:hover
+                    background: #3C57FF
+                    color: #fff
+    &__title
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        text-align: center
+        color: #000000
+        margin-top: 0
+        margin-bottom: 48px
+    &__all
+        width: calc(100% - 50px)
+        margin: 0 auto
+        background: linear-gradient(169.36deg, #F5F4FF 4.1%, #F4F6FF 101.99%)
+        border-radius: 48px
+        padding: 62px 0
+        padding-bottom: 104px
+        .home-price
+            &__card
+                background-color: #fff
+            &__products
+                margin-bottom: 83px
+                grid-gap: 12px
+            &__big
+                margin-bottom: 128px
+            &__table
+                overflow: hidden
+            &__line
+                position: relative
+                background-color: #fff
+                .price__btn
+                    margin: 0
+                    position: absolute
+                    top: 7px
+                    right: 24px
+                    color: #fff
+    &__btn
+        margin: 0 auto
+        margin-top: 32px
+        margin-bottom: 66px
+        width: 247px
+        height: 60px
+        background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+        border-radius: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        font-size: 18px
+        line-height: 24px
+        color: #FFFFFF
+        text-decoration: none
+        padding-bottom: 4px
+        &:hover
+            opacity: 0.8
+    &__hr
+        margin-bottom: 100px
+        & + .price__btn
+            display: none
+    &__del
+        margin-bottom: 128px
+    &-ways
+        display: flex
+        justify-content: space-between
+        background: #FFFFFF
+        border: 1px solid #DADADA
+        border-radius: 32px
+        &__col
+            width: 33.333%
+            border-right: 1px solid #DADADA
+            padding-bottom: 70px
+            &:last-child
+                border: none
+        &__title
+            padding: 40px
+            padding-bottom: 32px
+            border-bottom: 1px solid #DADADA
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            color: #131313
+        &__cont
+            padding: 32px 40px
+            padding-bottom: 62px
+        &__block
+            margin-bottom: 20px
+            ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                li
+                    margin-bottom: 8px
+                    padding-left: 24px
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        width: 16px
+                        height: 16px
+                        position: absolute
+                        top: 2px
+                        left: 0
+                        background: url('../img/serv/check.svg') center no-repeat
+        &__subtitle
+            margin-bottom: 12px
+            font-weight: 700
+            font-size: 16px
+            line-height: 24px
+            color: #131313
+        &__price
+            padding: 0 40px
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            span
+                display: block
+                margin-top: 8px
+                margin-bottom: 32px
+                font-weight: 700
+                font-size: 40px
+                line-height: 36px
+                color: #131313
+        &__btn
+            width: calc(100% - 80px)
+            margin: 0 auto
+            padding-bottom: 4px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 48px
+            height: 64px
+            left: 16px
+            top: 1290px
+            background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+            border-radius: 16px
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            text-decoration: none
+            color: #FFFFFF
+            &:hover
+                opacity: 0.8
+    &-photo
+        background: #FFFFFF
+        border-radius: 32px
+        &__top
+            display: flex
+            border-bottom: 1px solid #DADADA
+            span
+                width: 25%
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: #131313
+                padding: 24px 32px
+                border-right: 1px solid #DADADA
+                &:last-child
+                    border: none
+        &__line
+            display: flex
+            border-bottom: 1px solid #DADADA
+            &:last-child
+                border: none
+        &__name, &__art, &__price, &__descr
+            width: 25%
+            border-right: 1px solid #DADADA
+        &__art, &__price
+            span
+                display: block
+                padding: 22px 35px
+                padding-bottom: 26px
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: #131313
+                border-bottom: 1px solid #DADADA
+                &:last-child
+                    border: none
+        &__price
+            span
+                font-weight: 700
+        &__name
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            color: #000000
+            padding: 24px 40px
+        &__descr
+            border-right: 0
+            padding: 24px 30px
+        &__block
+            margin-bottom: 16px
+            b
+                display: block
+                margin-bottom: 4px
+@media(max-width: 991px)
+    .price
+        &__hr
+            .price__btn
+                display: none
+            &+.price__btn
+                display: flex
+        &-ways
+            &__price, &__cont, &__title
+                padding-left: 15px
+                padding-right: 15px
+            &__btn
+                width: calc(100% - 30px)
+        &-photo
+            &__descr, &__name
+                padding-left: 15px
+                padding-right: 15px
+@media(max-width: 767px)
+    .price
+        &__all
+            width: 100%
+            border-radius: 0
+            padding-bottom: 32px
+        &-ways
+            flex-wrap: wrap
+            grid-gap: 40px
+            background-color: transparent
+            border-radius: 0
+            border: 0
+            &__col
+                width: 100%
+                background-color: #fff
+                border: 1px solid #DADADA
+                border-radius: 32px
+                padding-bottom: 32px
+                &:last-child
+                    border: 1px solid #DADADA
+        &-photo
+            background-color: transparent
+            border-radius: 0
+            border: 0
+            &__top
+                display: none
+            &__line
+                margin-bottom: 100px
+                background: #FFFFFF
+                border-radius: 16px
+                border: 0
+                flex-wrap: wrap
+                position: relative
+            &__art, &__price
+                width: 50%
+            &__art
+                overflow: hidden
+                &::before
+                    content: "Артикулов"
+                    width: 100%
+                    padding: 26px 35px
+                    display: block
+                    border-bottom: 1px solid #DADADA
+                    height: 40px
+            &__price
+                border-right: 0
+                overflow: hidden
+                &::before
+                    content: "Стоимость за артикул"
+                    width: 100%
+                    padding: 26px 35px
+                    display: block
+                    border-bottom: 1px solid #DADADA
+                    height: 40px
+            &__descr
+                width: 100%
+                text-align: center
+                border-top: 1px solid #DADADA
+            &__name
+                border-right: 0
+                position: absolute
+                width: 100%
+                top: -68px
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #0B0B0B
+                left: 0
+                text-align: center
+@media(max-width: 575px)
+    .price
+        &__title
+            font-size: 28px
+            line-height: 32px
+        .home-price__line
+            text-align: center
+            span:first-child
+                border-bottom: 1px solid #DADADA
+                margin-bottom: 12px
+            span:last-child
+                font-weight: 400
+        &__del
+            margin-bottom: 64px
+            &+.price__title
+                margin-bottom: 80px
+        &__hr
+            margin-bottom: 24px
+        &__btn
+            margin-top: 24px
+            margin-bottom: 64px
+        .home-price
+            &__products
+                margin-bottom: 48px
+            &__big
+                margin-bottom: 64px
+        &__btn
+            width: 164px
+            height: 40px
+            font-size: 14px
+            border-radius: 8px
+        &-photo
+            &__art, &__price
+                &::before, span
+                    padding: 16px
+            &__name
+                line-height: 20px
+                font-size: 16px
+        &-top
+            &__title
+                font-size: 32px
+                line-height: 36px
+                text-align: left
+                margin-bottom: 24px
+            &__tabs
+                justify-content: flex-start
+                grid-gap: 8px
+                margin-bottom: 64px
+                a
+                    padding: 8px 14px
+                    font-size: 14px
+                    line-height: 20px
+        &-photo__line
+            margin-bottom: 80px

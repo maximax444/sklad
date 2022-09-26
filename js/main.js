@@ -69,3 +69,40 @@ $frame.each(function () {
         clickBar: 1
     });
 });
+// serv-photo__prev
+$('.serv-photo__slider').each(function () {
+    $(this).slick({
+        slide: "img",
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slide: "img",
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});
+$('.serv-photo__next').on('click', function () {
+    $(this).closest('.serv__slider').find('.serv-photo__slider').slick('slickNext');
+});
+$('.serv-photo__prev').on('click', function () {
+    $(this).closest('.serv__slider').find('.serv-photo__slider').slick('slickPrev');
+});

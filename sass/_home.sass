@@ -361,7 +361,8 @@
             border-radius: 32px
             position: relative
             padding: 40px
-            &:nth-child(1), &:nth-child(4)
+            overflow: hidden
+            &:nth-child(1), &:nth-child(4), &:nth-child(5)
                 width: 632px
             &:nth-child(1)
                 .home-features__descr
@@ -371,6 +372,10 @@
             &:nth-child(4)
                 .home-features__name
                     margin-bottom: 24px
+        &__top
+            position: absolute
+            top: 0
+            right: 0
         &__name
             font-weight: 700
             font-size: 32px
@@ -783,7 +788,7 @@
             &__block
                 padding: 24px
                 width: 340px
-                &:nth-child(1), &:nth-child(4)
+                &:nth-child(1), &:nth-child(4), &:nth-child(5)
                     width: 570px
         &-photo
             &__all
@@ -818,7 +823,7 @@
                 padding: 24px
                 width: 100%
                 height: auto
-                &:nth-child(1), &:nth-child(4)
+                &:nth-child(1), &:nth-child(4), &:nth-child(5)
                     width: 100%
                 &:nth-child(3)
                     order: 5
@@ -962,7 +967,7 @@
             padding: 32px 0
             padding-top: 36px
             &__block
-                &:nth-child(1), &:nth-child(4)
+                &:nth-child(1), &:nth-child(4), &:nth-child(5)
                     padding-bottom: 165px
                     img
                         max-height: 160px
@@ -1068,6 +1073,10 @@
                 overflow-x: scroll
                 .home-price__name
                     height: 40px
+            &__big, &__products
+                margin-right: -15px
+                margin-left: -15px
+                padding: 0 15px
             &__name
                 font-size: 14px
                 line-height: 20px

@@ -1,0 +1,330 @@
+.blog
+    &__all
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        grid-gap: 32px
+    &__main
+        width: 752px
+    &__nav
+        padding-top: 284px
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                display: block
+                margin-bottom: 16px
+            a
+                border-radius: 12px
+                padding: 12px 20px
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                text-align: center
+                color: #000000
+                text-decoration: none
+                border: 1px solid transparent
+                display: inline-block
+                &.active
+                    border: 1px solid #DADADA
+                &:hover
+                    color: #fff
+                    background-color: #3C57FF
+    &__btn
+        margin-top: 90px
+        width: 190px
+        height: 50px
+        background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+        border-radius: 8px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        text-decoration: none
+        color: #FFFFFF
+        &:hover
+            opacity: 0.8
+    &__title
+        margin-top: 0
+        margin-bottom: 64px
+        font-weight: 700
+        font-size: 60px
+        line-height: 68px
+        color: #000000
+        margin-top: 24px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        grid-gap: 32px 0
+        flex-wrap: wrap
+    &__block
+        display: block
+        width: calc(50% - 16px)
+        border: 1px solid #DADADA
+        border-radius: 24px
+        text-decoration: none
+    &__img
+        height: 144px
+        width: 100%
+        border-radius: 24px 24px 0px 0px
+        display: block
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 0.3s
+    &__cont
+        padding: 32px
+        display: block
+    &__name
+        font-weight: 700
+        font-size: 20px
+        line-height: 26px
+        color: #000000
+        margin-bottom: 12px
+        display: block
+    &__text
+        margin: 0
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+    &__block:hover
+        .blog__img img
+            transform: scale(1.1)
+    &__pag
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 64px
+        padding-bottom: 128px
+    &__arr
+        margin: 0 12px
+        width: 24px
+        height: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__page
+        width: 28px
+        height: 28px
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        &.active, &:hover
+            background: linear-gradient(150.26deg, #9368FE -47.44%, #3C57FF 93.94%)
+            border-radius: 6px
+            color: #FFFFFF
+    &__art
+        h2
+            margin: 0
+            margin-bottom: 32px
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            color: #000000
+        p
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            margin-top: 0
+            margin-bottom: 12px
+.article
+    &-blog
+        padding-top: 128px
+        padding-bottom: 32px
+    &__art
+        &>img
+            height: 270px
+            width: 100%
+            object-fit: cover
+            border-radius: 24px
+            margin-bottom: 24px
+        .main__video
+            height: 270px
+            width: 100%
+            display: block
+            margin-bottom: 75px
+        h2
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 32px
+            margin-top: 0
+            color: #000000
+        p
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            margin-top: 0
+            margin-bottom: 32px
+        .home-price__table
+            margin-bottom: 32px
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 48px
+    &__autor
+        margin-right: 8px
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__name
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        margin-right: 16px
+    &__date
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        opacity: 0.6
+        margin-right: 16px
+    &__views
+        display: flex
+        align-items: center
+        grid-gap: 8px
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        opacity: 0.6
+    &__comments
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        text-align: right
+        color: #3C57FF
+        text-decoration: none
+    &__left
+        display: flex
+        align-items: center
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__soc
+        display: flex
+        grid-gap: 8px
+    &__send
+        display: flex
+        grid-gap: 16px
+        align-items: center
+    &__tags
+        a
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #3C57FF
+            display: inline-block
+            text-decoration: none
+            padding: 5px 8px
+.comments
+    padding-top: 75px
+    &__title
+        font-weight: 700
+        font-size: 20px
+        line-height: 26px
+        color: #000000
+        margin-bottom: 32px
+    textarea
+        background: #FAFAFA
+        border-radius: 16px
+        font-style: normal
+        border: 0
+        width: 100%
+        height: 151px
+        padding: 20px 24px
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        display: block
+        margin-bottom: 16px
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    button
+        width: 190px
+        height: 50px
+        background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+        border-radius: 8px
+        border: 0
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        transition: all 0.3s
+        padding-bottom: 4px
+        &:hover
+            cursor: pointer
+            opacity: 0.8
+@media(max-width: 991px)
+    .blog
+        &__all
+            flex-direction: column-reverse
+        &__nav
+            padding: 0
+            ul
+                display: flex
+                grid-gap: 16px
+                flex-wrap: wrap
+                li
+                    margin-bottom: 0
+        &__btn
+            margin-top: 24px
+        &__main
+            width: 100%
+@media(max-width: 767px)
+    .article
+        &__top
+            flex-wrap: wrap
+            grid-gap: 8px 0
+@media(max-width: 575px)
+    .article
+        &__left
+            flex-wrap: wrap
+        &__bottom
+            flex-direction: column
+            align-items: flex-start
+            grid-gap: 20px
+        &__art
+            &>img
+                height: 180px
+            .main__video
+                height: 180px
+    .blog
+        &__block
+            width: 100%
+        &__title
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 32px
+        &__cont
+            padding: 24px
+        &__pag
+            padding: 40px 0
+        &__art
+            h2
+                font-size: 24px
+                line-height: normal

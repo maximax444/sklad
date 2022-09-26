@@ -1,0 +1,548 @@
+.serv
+    .main__wrap
+        padding: 0
+    .main__title
+        max-width: 560px
+        span
+            padding: 17px 10px
+            padding-top: 0
+            line-height: 51px
+    &__list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        margin-bottom: 48px
+        max-width: 430px
+        &--big
+            max-width: 530px
+        li
+            padding-left: 28px
+            position: relative
+            margin-bottom: 16px
+            font-weight: 400
+            font-size: 20px
+            line-height: 28px
+            color: rgba(#000000, 0.9)
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                top: 5px
+                left: 0
+                width: 12px
+                height: 12px
+                background: #4559FF
+                border-radius: 4px
+    &__btn
+        background: linear-gradient(150.07deg, #9368FE -164.28%, #3C57FF 93.91%)
+        border-radius: 16px
+        width: 262px
+        height: 64px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+        color: #FFFFFF
+        text-decoration: none
+        padding-bottom: 4px
+        &:hover
+            opacity: 0.8
+    &-in
+        padding-top: 66px
+        padding-bottom: 64px
+        &__all
+            background: linear-gradient(169.36deg, #F5F4FF 4.1%, #F4F6FF 101.99%)
+            border-radius: 64px
+            width: calc(100% - 50px)
+            margin: 0 auto
+            padding-top: 120px
+            padding-bottom: 32px
+        &__title
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+            margin-bottom: 65px
+            margin-top: 0
+            span
+                display: inline-block
+                margin: 0 auto
+                margin-top: 5px
+                background: #3C57FF
+                border-radius: 12px
+                color: #fff
+                padding: 10px 10px
+                padding-top: 0
+                line-height: 38px
+        &__block
+            padding: 25px
+            padding-left: 50px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background: #FFFFFF
+            border-radius: 48px
+            margin-bottom: 32px
+        &__media
+            border-radius: 32px
+            width: 448px
+            height: 276px
+            overflow: hidden
+            &> img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            .main__video
+                width: 100%
+                height: 100%
+                display: block
+        &__name
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            color: #000000
+            margin-bottom: 16px
+        &__cont
+            max-width: 400px
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: #000000
+                margin: 0
+                a
+                    color: #3C57FF
+                    text-decoration: none
+                    &:hover
+                        opacity: 0.8
+    &-see
+        .home-see__wrap
+            align-items: center
+    &-steps
+        padding: 60px 0
+        &__title
+            margin: 0
+            margin-bottom: 48px
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+        &__wrap
+            position: relative
+            &::after
+                content: ""
+                display: block
+                height: 596px
+                width: 42px
+                position: absolute
+                top: 28px
+                left: calc(50% - 21px)
+                background: url('../img/serv/steps.svg') center no-repeat
+        &__block
+            padding-left: calc(50% - 30px)
+            display: flex
+            align-items: flex-start
+            grid-gap: 32px
+            position: relative
+            z-index: 2
+            &:nth-child(2n)
+                flex-direction: row-reverse
+                padding-left: 0
+                padding-right: calc(50% - 30px)
+                text-align: right
+            &:nth-child(3)
+                margin-bottom: 48px
+            &:nth-child(4)
+                margin-bottom: 28px
+        &__num
+            width: 60px
+            height: 60px
+            background: linear-gradient(150.26deg, #9368FE -47.44%, #3C57FF 93.94%)
+            border-radius: 8px
+            font-weight: 700
+            font-size: 24px
+            line-height: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #FFFFFF
+        &__cont
+            max-width: 230px
+        &__name
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            color: #000000
+            margin-bottom: 8px
+        &__descr
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #000000
+            margin: 0
+    &-price
+        padding: 64px 0
+        .home-price__products
+            margin-bottom: 112px
+        &__title
+            max-width: 500px
+            margin: 0 auto
+            margin-bottom: 48px
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+        &__subtitle
+            font-weight: 400
+            font-size: 32px
+            line-height: 36px
+            text-align: center
+            color: #000000
+            margin-bottom: 48px
+    &-serv
+        &__wrap
+            flex-wrap: wrap
+            grid-gap: 32px 0
+    &-ways
+        padding: 64px 0
+        .price-photo
+            border: 1px solid #DADADA
+            border-radius: 32px
+    &-res
+        padding: 64px 0
+        &__title
+            margin-top: 0
+            margin-bottom: 57px
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: #000000
+        &__wrap
+            width: 654px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            grid-gap: 24px 0
+            flex-wrap: wrap
+        &__block
+            width: 315px
+            max-width: 48%
+            border: 1px solid #DADADA
+            border-radius: 16px
+            padding: 8px
+            display: flex
+            align-items: center
+        &__text
+            width: calc(100% - 80px)
+            padding: 0 22px
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+            color: #000000
+    &-photo
+        padding: 64px 0
+        &__all
+            background: linear-gradient(169.36deg, #F5F4FF 4.1%, #F4F6FF 101.99%)
+            border-radius: 64px
+            width: calc(100% - 50px)
+            margin: 0 auto
+            padding-top: 73px
+            overflow: hidden
+        &__title
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            margin-top: 0
+            margin-bottom: 96px
+            text-align: center
+            color: #000000
+        &__subtitle
+            font-weight: 700
+            font-size: 32px
+            line-height: 36px
+            margin-top: 0
+            margin-bottom: 16px
+            text-align: center
+            color: #000000
+        &__descr
+            max-width: 625px
+            margin: 0 auto
+            text-align: center
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+        &__slider
+            margin-top: 48px
+            img
+                margin: 0 8px
+                height: 330px
+                border-radius: 48px
+            .slick-list
+                overflow: visible
+        &__arrows
+            margin-top: 16px
+            margin-bottom: 32px
+            display: flex
+            justify-content: center
+            align-items: center
+            grid-gap: 32px
+        &__prev, &__next
+            width: 64px
+            height: 64px
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: all 0.3s
+            img
+                max-width: 100%
+            &:hover
+                opacity: 0.8
+                cursor: pointer
+        &__main
+            background: #FFFFFF
+            box-shadow: 0px 6px 20px rgba(143, 103, 244, 0.08), 0px 6px 64px #F0EDF7
+            border-radius: 48px
+            display: flex
+            justify-content: space-between
+            margin-bottom: 150px
+        &__info
+            padding: 48px 64px
+        &__name
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            color: #000000
+            margin-bottom: 16px
+        &__list
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                padding-left: 28px
+                position: relative
+                margin-bottom: 16px
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: rgba(#000000, 0.9)
+                b
+                    display: block
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    top: 5px
+                    left: 0
+                    width: 12px
+                    height: 12px
+                    background: #4559FF
+                    border-radius: 4px
+        &__price
+            width: 50%
+            background: linear-gradient(150.26deg, #9368FE -47.44%, #3C57FF 93.94%)
+            border-radius: 48px
+            padding: 48px 100px
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            color: #FFFFFF
+            span
+                display: block
+                font-size: 60px
+                line-height: 68px
+                margin-top: 16px
+                margin-bottom: 48px
+            a
+                width: 311px
+                height: 64px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 700
+                font-size: 20px
+                line-height: 24px
+                color: #3C57FF
+                background: linear-gradient(169.36deg, #F5F4FF 4.1%, #F4F6FF 101.99%)
+                border-radius: 16px
+                text-decoration: none
+                &:hover
+                    opacity: 0.8
+@media(max-width: 1099px)
+    .serv-photo
+        &__info
+            width: 50%
+        &__price
+            padding-left: 40px
+            padding-right: 40px
+@media(max-width: 992px)
+    .serv-photo
+        &__info
+            width: 45%
+        &__price
+            width: 55%
+    .serv-in
+        &__all
+            border-radius: 0
+            width: 100%
+        &__media, &__cont
+            width: 48%
+@media(max-width: 767px)
+    .serv
+        &-photo
+            &__main
+                display: block
+            &__info, &__price
+                width: 100%
+        &-ways
+            .price-photo
+                border: none
+                border-radius: 0
+                &__line
+                    border: 1px solid #DADADA
+                    border-radius: 16px
+                    &:last-child
+                        border: 1px solid #DADADA
+                        border-radius: 16px
+        &-res
+            &__wrap
+                width: 100%
+        &-in
+            &__block
+                display: block
+                padding: 0
+            &__cont
+                padding: 30px
+                width: 100%
+            &__media
+                height: 300px
+                width: 100%
+        &-steps
+            &__cont
+                max-width: 180px
+            &__wrap
+                &::after
+                    height: 736px
+                    width: 37px
+                    background: url('../img/serv/steps-mob.svg') center no-repeat
+@media(max-width: 575px)
+    .serv
+        &-photo
+            padding: 32px 0
+            &__all
+                border-radius: 0
+                width: 100%
+                padding: 32px 0
+            &__title
+                margin-bottom: 48px
+            &__slider
+                width: 250px
+                margin: 0 auto
+                margin-top: 48px
+            &__info
+                padding: 24px 32px
+            &__main
+                margin-bottom: 64px
+            &__subtitle
+                font-size: 22px
+            &__descr
+                font-size: 14px
+                line-height: 20px
+            &__price
+                padding: 24px
+                span
+                    font-size: 36px
+                    margin-top: 12px
+                    margin-bottom: 20px
+                a
+                    width: 100%
+        &-res
+            padding: 32px 0
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 48px
+            &__block
+                width: 100%
+                max-width: 100%
+        &-price
+            padding: 32px 0
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 24px
+            &__subtitle
+                font-size: 22px
+                line-height: normal
+                margin-bottom: 24px
+            .home-price__products
+                margin-bottom: 40px
+        &-in
+            padding: 32px 0
+            &__all
+                padding-top: 65px
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 48px
+                span
+                    line-height: 27px
+            &__cont
+                padding: 32px 24px
+            &__name
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 16px
+            &__media
+                height: 180px
+                border-radius: 16px
+            &__block
+                border-radius: 16px
+        &-steps
+            padding: 32px 0
+            &__title
+                font-size: 28px
+                line-height: 32px
+                margin-bottom: 32px
+            &__block
+                grid-gap: 16px
+                padding: 0
+                margin-bottom: 32px
+                &:nth-child(2n)
+                    padding: 0
+                    flex-direction: row
+                    text-align: left
+                &:last-child
+                    margin-bottom: 0
+            &__cont
+                max-width: calc(100% - 76px)
+            &__wrap
+                overflow: hidden
+                &::after
+                    height: 736px
+                    width: 37px
+                    left: 9px
+                    top: 15px
+                    background: url('../img/serv/steps-mob.svg') center no-repeat
+        .main__title span
+            line-height: 28px
+            padding-bottom: 10px
+            padding-left: 5px
+            padding-right: 5px
+        &__list
+            margin-bottom: 32px
+            li
+                font-size: 14px
+                margin-bottom: 12px
+                line-height: 20px
+        &__btn
+            width: 145px
+            height: 40px
+            font-size: 14px
+            border-radius: 8px
